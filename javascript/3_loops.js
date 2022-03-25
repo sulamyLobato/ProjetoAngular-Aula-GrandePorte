@@ -1,17 +1,14 @@
-//Crie um objeto que contenha como propriedades da sua banda favorita
-//Crie um Loop que mostre os nomes dos integrantes, não os papeis.
-const integrantes ={
-  vocalista: 'paulo ricardo'
-  guitarrista:"pereira",
-  baixista:"Guilherme",
-  baterista: 'vinicius'
+//*TODO: CRIE UM OBJETO QUE CONTENHA COMO PROPRIEDADES OS INTEGRANTES DA SUA BANDA FAVORITA
+//*TODO: CRIE UM LOOP QUE MOSTRE OS NOMES DOS INTEGRANTES, NÃO OS PAPÉIS
+
+const integrantes = {
+  vocalista: 'Ozzy',
+  guitarrista: 'Tony Iommi',
+  baixista: 'Geezer Butler',
+  baterista: 'Bill Ward',
 };
 
+for (let integrante in integrantes)
+  console.log(`O ${integrante} do Black Sabbath é o ${integrantes[integrante]}`);
 
-for (var i = 0; i < 9; i++) {
-  console.log(i);
-  // more statements
-}
-
-for( let integrantes of integrantes) console.log(integrantes);
-for( let integrantes in integrantes) console.log(integrantes);
+// * Ozzy, Tony Iommi, Geezer Butler, Bill Ward
